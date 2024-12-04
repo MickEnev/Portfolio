@@ -12,7 +12,7 @@ body {
     box-sizing: border-box;
     font-family:'Courier New', Courier, monospace;
     background-color: transparent;
-    background-image: linear-gradient(90deg, #3f4443, #262d2c, #0a0c0c);
+    background-image: linear-gradient(90deg, #2f3030, #1d1c1b, #0a0c0c);
 }
 
 /* Header Navbar Styles */
@@ -25,7 +25,7 @@ body {
     top: 0;
     width: 100%;
     color: #262d2c;
-    background-image: linear-gradient(90deg, #3f4443, #262d2c, #0a0c0c);
+    background-image: linear-gradient(90deg, #2f3030, #1d1c1b, #0a0c0c);
     background-color: transparent;
 }
 
@@ -93,9 +93,65 @@ a:hover {
     justify-content: start;
     margin: 4.8rem 0;
     color: white;
+    
 }
 
 .hero .intro {
     text-align: center;
     margin: 0 5rem;
+    font-size: 50px;
+}
+
+.hero .greet-heading {
+    margin-bottom: 0.1rem;
+}
+
+.hero .my-heading {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.hero .sub-heading {
+    font-size: 25px;
+    margin-top: 0.1rem;
+}
+
+.hero .intro-buttons {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero .get-resume {
+  background-color: #c7842d;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.hero .get-resume:hover,
+.hero .get-resume:focus {
+  background-color: #fcba65;
+  transition: all 0.5s ease;
 }
