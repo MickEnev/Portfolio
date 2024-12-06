@@ -93,7 +93,7 @@ a:hover {
     justify-content: start;
     margin: 4.8rem 0;
     color: white;
-    
+    margin-top: 0px;
 }
 
 .hero .intro {
@@ -154,4 +154,18 @@ a:hover {
 .hero .get-resume:focus {
   background-color: #fcba65;
   transition: all 0.5s ease;
+}
+
+.education-history {
+    color: white;
+    padding: 0;
+    margin-left: 900px;
+}
+
+#education-heading {
+    font-size: 40px;
+}
+
+.foo {
+    margin-left: 0px;
 }
