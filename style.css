@@ -1,3 +1,17 @@
+* { 
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero,
+.about,
+.projects-section {
+    scroll-margin-top: 240px; /* Adjust this value to match your navbar height */
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -13,6 +27,14 @@ body {
     font-family:'Courier New', Courier, monospace;
     background-color: transparent;
     background-image: linear-gradient(90deg, #2f3030, #1d1c1b, #0a0c0c);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    display: block;
+}
+
+section {
+    text-align: center;
 }
 
 /* Header Navbar Styles */
@@ -27,6 +49,7 @@ body {
     color: #262d2c;
     background-image: linear-gradient(90deg, #2f3030, #1d1c1b, #0a0c0c);
     background-color: transparent;
+    z-index: 1000;
 }
 
 .logo {
@@ -86,24 +109,41 @@ a:hover {
 /* Hero Styles */
 
 .hero {
-    width: 100%;
-    height: 70vh;
     display: flex;
-    align-items: center;
-    justify-content: start;
-    margin: 4.8rem 0;
+    align-items: flex-start;
+    padding-top: 50px;
+    justify-content: center;
     color: white;
-    margin-top: 0px;
+    min-height: 70vh;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 .hero .intro {
-    text-align: center;
-    margin: 0 5rem;
-    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 200px;
 }
 
-.hero .greet-heading {
-    margin-bottom: 0.1rem;
+.hero .headings {
+    flex: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero .profile-picture {
+    margin-left: 100px;
+}
+
+.hero .profile-picture img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
 }
 
 .hero .my-heading {
@@ -156,16 +196,255 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-.education-history {
+/* Education - Stack Section */
+
+.about .edu-stack-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     color: white;
-    padding: 0;
-    margin-left: 900px;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    top: -100px;
 }
 
-#education-heading {
-    font-size: 40px;
+.about .stack .tech {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-size: 50px
 }
 
-.foo {
-    margin-left: 0px;
+.about .education,
+.about .stack {
+    flex: 1;
+    padding: 20px;
+    background-color: #1d1c1b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.about .education h2,
+.about .stack h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #c7842d;
+}
+
+.about .education p,
+.about .stack p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.education .masters h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.education .masters h4 {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+.education .masters p {
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.education .bachelors h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.education .bachelors h4 {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+.education .bachelors p {
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.stack .tech .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stack .tech .icon p {
+    margin-top: 0px;
+}
+
+/* Project Section */
+
+.projects-section .project-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    padding: 20px;
+    background-color: #1d1c1b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+.projects-section .project-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #c7842d;
+}
+
+.projects-section .project-container .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 0px;
+}
+
+.projects-section .project-container .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.project .description {
+    flex: 1;
+    text-align: left;
+}
+
+.project .description h2 {
+    color: #c7842d;
+    margin-bottom: 15px;
+}
+
+.project .project-picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3a3a;
+    border-radius: 10%;
+    height: 300px;
+    max-width: 400px;
+}
+
+.project .project-picture img {
+    border-radius: 10%;
+    border: 5px solid #555;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project .description,
+    .project .project-picture {
+        width: 100%;
+    }
+}
+
+.projects .project .description .tech {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-size: 50px;
+    margin-bottom: 0px
+}
+
+.projects .project .description .tech .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.projects .project .description .tech .icon img {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.projects .project .description .tech .icon p {
+    margin-top: 5px;
+    font-size: 15px;
+    margin-bottom: 10px
+}
+
+/* TODO: Tweak Design of Links */
+.projects .project .description .links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    margin-left: 5px; /* Maybe Remove */
+}
+
+.projects .project .description a {
+    font-size: 30px;
+    color:#c7842d;
+}
+
+.projects .project .description a:hover {
+    color: rgb(84, 83, 83);
+    transition: all 0.2s ease;
+}
+
+#bb2 {
+    margin-bottom: 0px;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+
+.tab button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab button.active {
+    background-color: #ccc;
+  }
