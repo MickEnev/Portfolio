@@ -168,8 +168,12 @@
             </div>
         </div>
     </section>
+    <div class="tab-buttons">
+        <button id="proj-tab" class="active" onclick="showSection('proj')">Projects</button>
+        <button id="exp-tab" onclick="showSection('exp')">Experience</button>
+    </div>
     <!-- Projects section -->
-    <section id="proj" class="projects-section">
+    <section id="proj" class="tab-content projects-section active">
         <div class="project-container">
             <h1>Projects</h1>
             <div class="projects">
@@ -392,6 +396,19 @@
                 </div>-->
             </div>
         </div>
+    </section>
+    <!-- Experience section -->
+    <section id="exp" class="tab-content experience">
+        <div class="experience-container">
+            <h1>Experience</h1>
+            <div class="experiences">
+                <div class="job">
+                    <div class="description">
+                        <h2>Got fired for being too chad</h2>
+                    </div>
+                </div>
+            </div>
+        </div>>
     </section>
     <script src="main.js"></script>
 </body>
