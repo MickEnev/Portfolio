@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.hero,
+.about,
+.projects-section {
+    scroll-margin-top: 240px; /* Adjust this value to match your navbar height */
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -39,6 +49,7 @@ section {
     color: #262d2c;
     background-image: linear-gradient(90deg, #2f3030, #1d1c1b, #0a0c0c);
     background-color: transparent;
+    z-index: 1000;
 }
 
 .logo {
@@ -277,7 +288,8 @@ a:hover {
 
 .projects-section .project-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
     color: white;
     gap: 20px;
@@ -286,12 +298,118 @@ a:hover {
     text-align: center;
     position: relative;
     top: -100px;
-}
-
-.projects-section .project-container .projects {
-    flex: 1;
     padding: 20px;
     background-color: #1d1c1b;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+.projects-section .project-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #c7842d;
+}
+
+.projects-section .project-container .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.projects-section .project-container .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.project .description {
+    flex: 1;
+    text-align: left;
+}
+
+.project .description h2 {
+    color: #c7842d;
+    margin-bottom: 15px;
+}
+
+.project .project-picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3a3a;
+    border-radius: 10%;
+    height: 300px;
+    max-width: 400px;
+}
+
+.project .project-picture img {
+    border-radius: 10%;
+    border: 5px solid #555;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project .description,
+    .project .project-picture {
+        width: 100%;
+    }
+}
+
+.projects .project .description .tech {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-size: 50px;
+    margin-bottom: 0px
+}
+
+.projects .project .description .tech .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px
+}
+
+.projects .project .description .tech .icon p {
+    margin-top: 5px;
+    font-size: 15px;
+    margin-bottom: 10px
+}
+
+/* TODO: Tweak Design of Links */
+.projects .project .description .links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    margin-left: 5px; /* Maybe Remove */
+}
+
+.projects .project .description a {
+    font-size: 30px;
+    color:#c7842d;
+}
+
+.projects .project .description a:hover {
+    color: rgb(84, 83, 83);
+    transition: all 0.2s ease;
 }
