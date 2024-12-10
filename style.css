@@ -1,3 +1,7 @@
+* { 
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -180,7 +184,7 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-/* Education Section */
+/* Education - Stack Section */
 
 .about .edu-stack-container {
     display: flex;
@@ -191,12 +195,14 @@ a:hover {
     width: 80%;
     margin: 0 auto;
     text-align: left;
+    position: relative;
+    top: -100px;
 }
 
 .about .stack .tech {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 25px;
     font-size: 50px
 }
 
@@ -204,21 +210,88 @@ a:hover {
 .about .stack {
     flex: 1;
     padding: 20px;
-    background-color: #1d1c1b; /* Example background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    background-color: #1d1c1b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about .education h2,
 .about .stack h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #c7842d; /* Accent color */
+    color: #c7842d;
 }
 
 .about .education p,
 .about .stack p {
     font-size: 16px;
     line-height: 1.5;
-    color: #fff; /* Text color */
+    color: #fff;
+}
+
+.education .masters h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.education .masters h4 {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+.education .masters p {
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.education .bachelors h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.education .bachelors h4 {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+.education .bachelors p {
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.stack .tech .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stack .tech .icon p {
+    margin-top: 0px;
+}
+
+/* Project Section */
+
+.projects-section .project-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+
+.projects-section .project-container .projects {
+    flex: 1;
+    padding: 20px;
+    background-color: #1d1c1b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
