@@ -21,6 +21,17 @@ function showSection(sectionId) {
     // Show the selected section
     document.getElementById(sectionId).classList.add('active');
 
-    // Highlight the selected button
-    document.getElementById(`${sectionId}-tab`).classList.add('active');
+    // Highlight the corresponding tab button (if it exists)
+    const tabButton = document.getElementById(`${sectionId}-tab`);
+    if (tabButton) {
+        tabButton.classList.add('active');
+    }
+}
+
+function navigateToSection(event, sectionId) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    showSection(sectionId);
+
+    // Optionally scroll to the section (if desired)
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
 }

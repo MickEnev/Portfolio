@@ -9,7 +9,7 @@ html {
 .hero,
 .about,
 .projects-section {
-    scroll-margin-top: 240px; /* Adjust this value to match your navbar height */
+    scroll-margin-top: 270px; /* Adjust this value to match your navbar height */
 }
 
 html, body {
@@ -433,15 +433,24 @@ a:hover {
 .tab-buttons button {
     padding: 10px 20px;
     margin: 0 5px;
-    border: 1px solid #ccc;
-    background-color: #f4f4f4;
+    border: 1px solid #fff;
+    background-color: #fff;
     cursor: pointer;
+    border-radius: 5%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .tab-buttons button.active {
-    background-color: #007bff;
+    background-color: #c7842d;
     color: white;
-    border-color: #007bff;
+    border-color: #c7842d;
+}
+
+.tab-buttons button:hover {
+    background-color: rgb(119, 83, 15);
+    border-color: rgb(119, 83, 15);
+    color: white;
+    transition: all 0.2s ease;
 }
 
 .tab-content {
