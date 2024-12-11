@@ -36,12 +36,12 @@
                         </a>
                     </li>
                     <li class="menu-list-items">
-                        <a class="links" href="#proj">
+                        <a class="links" href="#proj" onclick="navigateToSection(event, 'proj')">
                             Projects
                         </a>
                     </li>
                     <li class="menu-list-items">
-                        <a class="links" href="#home">
+                        <a class="links" href="#exp" onclick="navigateToSection(event, 'exp')">
                             Experience
                         </a>
                     </li>
@@ -168,8 +168,12 @@
             </div>
         </div>
     </section>
+    <div class="tab-buttons">
+        <button id="proj-tab" class="active" onclick="showSection('proj')">Projects</button>
+        <button id="exp-tab" onclick="showSection('exp')">Experience</button>
+    </div>
     <!-- Projects section -->
-    <section id="proj" class="projects-section">
+    <section id="proj" class="tab-content projects-section active">
         <div class="project-container">
             <h1>Projects</h1>
             <div class="projects">
@@ -390,6 +394,73 @@
                         <img src="weightliftingapp.jpg" alt="WeightliftingApp-Picture">
                     </div>
                 </div>-->
+            </div>
+        </div>
+    </section>
+    <!-- Experience section -->
+    <section id="exp" class="tab-content experience">
+        <div class="experience-container">
+            <h1>Experience</h1>
+            <div class="experiences">
+                <div class="job">
+                    <div class="description">
+                        <h2>AI Model Trainer(Freelance)</h2>
+                        <h3>ScaleAI</h3>
+                        <h3 class="date">January 2024 - Present</h3>
+                        <p>- Perform Large Language Model prompt response analysis.</p>
+                        <p>- Assess output for validity and quality in the domains of computer science, math, and economcs.</p>
+                    </div>
+                </div>
+            <div class="job">
+                <div class="description">
+                    <h2>Front Desk Sales Representative</h2>
+                    <h3>Crunch Fitness</h3>
+                    <h3 class="date">August 2022 - May 2024</h3>
+                    <p>- Helped customers decide on an appropriate membership level for their health and fintess goals.</p>
+                    <p>- Maintained a clean and well functioning gym improving cleanlieness by 100%.</p>
+                    </div>
+            </div>
+            <div class="job">
+                <div class="description">
+                    <h2>Data Analyst Intern</h2>
+                    <h3>American Energy Society</h3>
+                    <h3 class="date">February 2023 - May 2023</h3>
+                    <p>- Conducted extensive research on global university energy programs, enhancing analytical skills in data
+                        collection and synthesis. </p>
+                    <p>- Compiled research findings into a comprehensive Excel document for organizational use.</p>
+                    <p>- Collaborated with a cross-functional team of 12+ individuals to deliver data-driven insights.</p>
+                </div>
+            </div>
+            <div class="job">
+                <div class="description">
+                    <h2>Computer Science Course Assistant</h2>
+                    <h3>University of Illinois Urbana-Champagin</h3>
+                    <h3 class="date">August 2022 - December 2022</h3>
+                    <p>- Created programming walk-throughs in Java to aid dozens of students in the learning of Java programming
+                        skills. </p>
+                    <p>- Guided students in solving complex problems through group discussion and personalized feedback.</p>
+                    <p>- Led office hours and helped students debug and implement features for the semester project. Features
+                        included creating a list of favorite restaurants, creating recommendations based off of the users preferences,
+                        and displaying those restaurants on a map.</p>
+                </div>
+            </div>
+            <div class="job">
+                <div class="description">
+                    <h2>Sales Associate</h2>
+                    <h3>The Home Depot</h3>
+                    <h3 class="date">January 2022 - August 2022</h3>
+                    <p>- Lead customers to the products they were looking for in a timely manner.</p>
+                    <p>- Imrpoved stock upkeep by over 50%.</p>
+                </div>
+            </div>
+            <div class="job">
+                <div class="description">
+                    <h2>Assistant Manager - Head of Sales</h2>
+                    <h3>FG Fireworks</h3>
+                    <h3 class="date">May 2020 - July 2024</h3>
+                    <p>- Oversaw employee performance, corrected problems, and increased sales by 10-30% each season.</p>
+                    <p>- Worked 12-18 hour days for the duration of the season while maintaining work rate and professionalism.</p>
+                </div>
             </div>
         </div>
     </section>
