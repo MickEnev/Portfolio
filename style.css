@@ -8,7 +8,8 @@ html {
 
 .hero,
 .about,
-.projects-section {
+.projects-section,
+.experience {
     scroll-margin-top: 270px; /* Adjust this value to match your navbar height */
 }
 
@@ -515,5 +516,33 @@ a:hover {
 
 .job .description h2 {
     color: #c7842d;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+.job .description .date {
+    color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.job .description h3 {
+    color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.job .description h4 {
+    color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.job .description p {
+    display: flex;
+    justify-content: center;
 }
