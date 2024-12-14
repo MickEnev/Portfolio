@@ -475,11 +475,19 @@ a:hover {
 }
 
 /* Tab Button Styling */
+.tab-buttons-container {
+    display: flex;
+    justify-content: center;
+}
 
 .tab-buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
+    background-color: #1d1c1b;
+    padding: 10px 20px;
+    padding-bottom: 30px;
+    border-radius: 5%;
     
 }
 
