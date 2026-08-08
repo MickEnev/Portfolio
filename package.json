@@ -1,0 +1,30 @@
+{
+  "name": "mick-enev-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "lucide-react": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "latest",
+    "tailwindcss": "latest",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
+  }
+}
